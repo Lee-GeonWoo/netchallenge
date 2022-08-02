@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en" class-"h-100">
+    <head>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Jekyll v3.8.5">
+        <title>KSK Dashboard</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script src="../static/js123/bootstrap.bundle.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.js"></script>
+
+        <!-- Bootstrap core CSS -->
+        <link href="../static/css123/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="../static/css123/styles.css" rel="stylesheet" type="text/css" />
+
+
+        <link rel="shortcut icon" href="#" />
+        <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+        </style>
+        <!-- Custom styles for this template -->
+        <style type="text/css">
+        html, body { height:100%; overflow:hidden; margin:0; padding: 0;margin-right: 0;padding-right: 0;}
+        .h-div {height:7%; }
+        .h-div2 {height:89%;  width:100%; margin: 0; padding: 0; }
+        .h-div3 {height: 4%; width: 100%; font-size: 5px;}
+        .h-div-right {height : 100%; width: 20%;  float: right; margin: 0; padding: 0;}
+        .h-div-right-box {height: 60%;width: 15%; margin: 0; padding: 0; position: absolute; bottom: 2%; right: 5%; font-size: 20px; border : 2px solid black}
+        .h-div-left {height: 100%;width: 18%;float: left; margin-left: 1%; margin-top: 2%;
+        }
+        </style>
+
+        <script>
+            $(function(){
+                $('#pod_create').click(function(){
+                    console.log("come in");
+                    $.ajax({
+                        url: '/create_pod',
+                        cache: false,
+                        data: {
+                            pod_name: $('#pod_name').val(),
+                            pod_description:$('#pod_description').val()
+                        },
+                        type: 'POST',
+                        success:function(){
+                                $('#contact-modal').modal('hide');
+                                $('#pod_name').val("");
+                                $('#pod_description').val("");
+                                window.location.reload()
+                        },
+                        error:function(){
+                            $('#contact-modal').modal('hide');
+                        }
+                    });
+                });
+
+                $('#pod_cancel').click(function(){
+                     $('#contact-modal').modal('hide');
+                     $('#pod_name').val("");
+                     $('#pod_description').val("");
+                });
+                $('#pod_cancel2').click(function(){
+                     $('#contact-modal').modal('hide');
+                     $('#pod_name').val("");
+                     $('#pod_description').val("");
+                });
+            });
+
+            function new_Node(id, group, label, level){
+                var a = {};
+                a.id = id;
+                a.group = group;
+                a.label = label;
+                a.level = level;
+                return a;
+            }
+            function new_Node2(id, group, label){
+                var a = {};
+                a.id = id;
+                a.group = group;
+                a.label = label;
+                a.level = 4;
+                return a;
+            }
+
+
+	    var nodes1 = {{core_pod_data_list|tojson}}; //vm
+
+            var nodes2 = {{edge1_pod_data_list|tojson}}; //vm
+
+
+            console.log(nodes1);
+            console.log(nodes2);
+
+            for(var i=0; i<nodes1.length; i++){
+                nodes.push(new_Node(nodes1[i].id, nodes1[i].group, nodes1[i].label, nodes1[i].level));
+            }
+
+            for(var i=0; i<nodes2.length; i++){
+                nodes.push(new_Node(nodes2[i].id, nodes2[i].group, nodes2[i].label, nodes2[i].level));
+            }
+
+            function new_Object(target, source){
+                var a={};
+                a.target = target;
+                a.source = source;
+                a.strength = 0.6;
+                return a;
+            }
+            function new_Object2(target, source){
+                var a={};
+                a.target = target;
+                a.source = source;
+                a.strength = 0.72;
+                return a;
+            }
+    
+        </script>
+    </head>
+
+    <body class="d-flex flex-column h-100">
+                <div id="contact-modal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3>Create Pod</h3>
+                                <button type="button" class="close" id="pod_cancel2">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <form id="contactForm" name="contact" role="form" accept-charset="utf-8">
+                                <div class="modal-body">
+                                    <div class="form-group">
+                                       <label for="name">Name</label>
+                                       <input type="text" name="name" id="pod_name" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message">YAML_FILE</label>
+                                        <textarea name="message" class="form-control" id="pod_description"></textarea>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" id="pod_create" class="btn btn-default">Submit</button>
+                                    <button type="button" id="pod_cancel" class="btn btn-default">Close</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css123/styles.css">
+    <title>KSK Dashboard</title>
+</head>
+       <div class="wrapper">
+        <ui class="mainMenu">
+            <li class="item" id="account" active>
+		    <a href="#account" class="btn"><i class="fas fa-user-circle"></i><img class="logo" src="../static/img/home.png">Home</a>
+            </li>
+            <li class="item" id="about">
+		    <a href="#about" class="btn"><i class="fas fa-address-card"></i><img class="logo" src="../static/img/manage.png">Manage</a>
+                <div class="subMenu">
+                    <a data-toggle="modal" href="#contact-modal">- create</a>
+                    <a href="">- delete</a>
+                </div>
+            </li>
+            <li class="item">
+		    <a href="#" class="btn" onclick='window.location.href="http://192.168.10.197:31416/d/bFxISTzMz/kubernetes-compute-resources-node-groups?orgId=1&refresh=10s"'><i class="fas fa-user-circle"></i><img class="logo" src="../static/img/app.png">Resource Monitoring</a>
+	    </li>
+            <li class="item" id="support">
+		    <a href="#support" class="btn"><i class="fas fa-address-card"></i><img class="logo" src="../static/img/monitor.png">Resource Monitoring</a>
+        	<div class="subMenu">
+                    <a href="#" onclick='window.location.href="http://192.168.10.212:31564/"'>- Core Cluster</a>
+                    <a href="#">- Edge Cluster1</a>
+                    <a href="#">- Edge Cluster2</a>
+		    <a href="#">- Edge Cluster3</a>
+		</div>
+	    </li>
+        </ui>
+    </div>
+
+
+	<style>
+	#btn1 {
+	   border-radius: 5px;
+           border: 2px solid #006fd1;
+           background-color: white;
+           color: skyblue;
+           padding: 10px;
+           margin-left: 300px;
+	   font-size: 20px;
+           font-color: #006fd1;
+        }
+
+        #btn2 {
+	   border-radius: 5px;
+           border: 2px solid #006fd1;
+           background-color: white;
+           color: skyblue;
+           padding: 10px;
+	   margin-left: 40px;
+	   font-size: 20px;
+           font-color: #006fd1;
+        }
+
+        #btn1:hover {
+           background-color: #006fd1;
+           color: white;
+        }
+        
+	#btn2:hover {
+           background-color: #006fd1;
+           color: white;
+        }
+
+	</style>
+
+
+	<div id = "btn_group">
+		<button id = "btn1"><b><a href="/">Core Cluster</a></b></button>
+		<button id = "btn2"><b><a href="/edge1">Edge Cluster1</a></b></button>
+		<button id = "btn2"><b>Edge Cluster2</b></button>
+		<button id = "btn2"><b>Edge Cluster3</b></button>
+	</div>
+
+<div>
+	<div>
+		<div>
+			<div class="section">
+				<ul>
+				<li><p>
+					<script>
+					
+					for(var i=0; i<nodes1.length; i++){
+						document.write('&nbsp;<b>POD NAME</b> : ' + nodes1[i].id + ' | <b>NODE</b> : ' + nodes1[i].node + ' | <b>NAMESPACE</b> : ' + nodes1[i].namespace + ' | <b>IMAGE</b> : ' + nodes1[i].image);	
+						document.write('<br><br>');
+					}
+	
+				
+					</script>
+				</p></li>
+				</ul>
+			</div>
+		<div>
+	</div>
+</div>
+
+    </body>
+</html>
+
