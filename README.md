@@ -27,7 +27,11 @@ $ docker exec -it mysql /bin/bash
 $ cd webapps/ROOT/
 $ ls
 ```
-
+RELEASE-NOTES.txt  bg-button.png  bg-upper.png  brown.jsp   favicon.ico  img                map.jsp           orange.jsp       purple.jsp  tomcat.css   white.jsp
+WEB-INF            bg-middle.png  black.jsp     css         green.jsp    ip.txt             navy.jsp          pants_skirt.jsp  red.jsp     tomcat.svg   yellow.jsp
+asf-logo-wide.svg  bg-nav.png     blue.jsp      detail.jsp  grey.jsp     jumper_hoodie.jsp  neat_sweater.jsp  pink.jsp         shirts.jsp  tshirts.jsp  
+  
+  
 ### Running MySQL
 ```
 $ docker run --name mysql rjsdnfk9/ksk_mysql:1.0
