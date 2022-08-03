@@ -52,126 +52,100 @@
                                 <img src="img/A_tshirts.png" class="map" />
                 <%
                         }
-
                         else if(brand.equals("THISISNEVERTHAT")) {      %>
                                 <img src="img/B_tshirts.png" class="map" />
                 <%      }
-
                         else if(brand.equals("ROMANTIC CROWN")) {       %>
                                 <img src="img/C_tshirts.png" class="map" />
                 <%
                         }
-
                         else if(brand.equals("5252")) { %>
                                 <img src="img/D_tshirts.png" class="map" />
                 <%
                         }
                         else if(brand.equals("PLAC")) { %>
                                 <img src="img/E_tshirts.png" class="map" />
-
                 <%      }
                 }
-
                 else if(category.equals("jumper_hoodie")) {
                         if(brand.equals("NIKE")) {      %>
                                 <img src="img/A_jumper.png" class="map" />
                 <%
                         }
-
                         else if(brand.equals("THISISNEVERTHAT")) {      %>
                                 <img src="img/B_jumper.png" class="map" />
                 <%      }
-
                         else if(brand.equals("ROMANTIC CROWN")) {       %>
                                 <img src="img/C_jumper.png" class="map" />
                 <%
                         }
-
                         else if(brand.equals("5252")) { %>
                                 <img src="img/D_jumper.png" class="map" />
                 <%
                         }
                         else if(brand.equals("PLAC")) { %>
                                 <img src="img/E_jumper.png" class="map" />
-
                 <%      }
                 }
-
                 else if(category.equals("neat_sweater")) {
                         if(brand.equals("LAFUDGESTORE") || brand.equals("PLAC")) {      %>
                                 <img src="img/A_neat.png" class="map" />
                 <%
                         }
-
                         else if(brand.equals("THISISNEVERTHAT")) {      %>
                                 <img src="img/B_neat.png" class="map" />
                 <%      }
-
                         else if(brand.equals("ROMANTIC CROWN")) {       %>
                                 <img src="img/C_neat.png" class="map" />
                 <%
                         }
-
                         else if(brand.equals("5252")) { %>
                                 <img src="img/E_neat.png" class="map" />
                 <%
                         }
                 }
-
                 else if(category.equals("shirts")) {
                         if(brand.equals("NIKE")) {      %>
                                 <img src="img/A_shirts.png" class="map" />
                 <%
                         }
-
                         else if(brand.equals("THISISNEVERTHAT")) {      %>
                                 <img src="img/B_shirts.png" class="map" />
                 <%      }
-
                         else if(brand.equals("ROMANTIC CROWN")) {       %>
                                 <img src="img/C_shirts.png" class="map" />
                 <%
                         }
-
                         else if(brand.equals("5252")) { %>
                                 <img src="img/D_shirts.png" class="map" />
                 <%
                         }
                         else if(brand.equals("LAFUDGESTORE") | brand.equals("PLAC")) { %>
                                 <img src="img/E_shirts.png" class="map" />
-
                 <%      }
                 }
-
                 if(category.equals("pants")) {
                         if(brand.equals("NIKE")) {      %>
                                 <img src="img/A_B_pants.png" class="map" />
                 <%
                         }
-
                         else if(brand.equals("THISISNEVERTHAT")) {      %>
                                 <img src="img/A_B_pants.png" class="map" />
                 <%      }
-
                         else if(brand.equals("ROMANTIC CROWN")) {       %>
                                 <img src="img/C_D_E_pants.png" class="map" />
                 <%
                         }
-
                         else if(brand.equals("5252")) { %>
                                 <img src="img/C_D_E_pants.png" class="map" />
                 <%
                         }
                         else if(brand.equals("PLAC")) { %>
                                 <img src="img/C_D_E_pants.png" class="map" />
-
                 <%      }
                 }
-
                 %>
-
                 <%
-
                 PreparedStatement pstmt = null;
                 ResultSet rs = null;
                 Class.forName("com.mysql.jdbc.Driver");
@@ -181,10 +155,8 @@
                 pstmt = conn.prepareStatement("update clothes set readcount=readcount+1 where name=?");
                 pstmt.setString(1, name);
                 pstmt.executeUpdate();
-
                 %>
-
-
+                                        
                 <a href="#" onclick='history.go(-1); return false;' class="button">이전으로</a>
         <%      if(category.equals("t-shirts")) { %>
                         <a href="tshirts.jsp" class="button2">메인으로</a>
@@ -197,10 +169,8 @@
         <%      } else if(category.equals("pants_skirt")) {     %>
                         <a href="pants_skirt.jsp" class="button2">메인으로</a>
         <%      }       %>
-
                                 </div>
                         </div>
-
                         <div class="tm-section tm-container-inner">
                                 <div class="row">
                                         <div class="col-md-6">
