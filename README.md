@@ -38,5 +38,5 @@ $ select * from clothes;
 <b>price</b> : <clothes' price>  
 <b>stock</b> : <# of clothes>  
 <b>color</b> : <clothes' color>  
-<b>readcount</b> : <count of clothes' readcount>  
+<b>readcount</b> : <# of clothes' readcount>  
 
