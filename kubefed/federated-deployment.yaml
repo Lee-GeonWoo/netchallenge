@@ -1,0 +1,99 @@
+apiVersion: v1 
+kind: Namespace 
+metadata: 
+  name: demo
+
+---
+
+apiVersion: types.kubefed.io/v1beta1
+kind: FederatedNamespace
+metadata:
+ name: demo
+ namespace: demo
+spec:
+ placement:
+   clusters:
+   - name: core
+   - name: edge1
+   - name: edge2
+   - name: edge3
+
+---
+
+apiVersion: types.kubefed.io/v1beta1
+kind: FederatedDeployment
+metadata:
+  name: demo
+  namespace: demo
+spec:
+  template:
+    metadata:
+      labels:
+        app: demo
+    spec:
+      replicas: 2
+      selector:
+        matchLabels:
+          app: demo
+      template:
+        metadata:
+          labels:
+            app: demo
+        spec:
+          containers:
+            - name: tomcat  
+              image: whdmlwls28/netcc-tomcat:3.0
+              ports:
+                - name: https
+                  containerPort: 8080
+            - name: mysql
+              image: whdmlwls28/netcc-mysql:2.0
+              ports:
+                - name: https
+                  containerPort: 3306
+  placement:
+    clusters:
+      - name: core
+      - name: edge1
+      - name: edge2
+      - name: edge3
+#overrides:
+#  - clusterName: cluster2
+#    clusterOverrides:
+#      - path: "/spec/replicas"
+#        value: 1
+#  - clusterName: cluster4
+#    clusterOverrides:
+#      - path: "/spec/replicas"
+#        value: 1
+
+---
+
+apiVersion: types.kubefed.io/v1beta1
+kind: FederatedService
+metadata:
+  name: demo
+  namespace: demo
+spec:
+  template:
+    metadata:
+      name: demo
+      labels:
+        app: demo
+    spec:  
+      ports:
+      - name: demo-1
+        nodePort: 32222
+        port: 80
+        protocol: TCP
+        targetPort: 8080
+      selector:
+        app: demo
+      type: NodePort
+  placement:
+    clusters:
+    - name: core
+    - name: edge1
+    - name: edge2
+    - name: edge3
+
