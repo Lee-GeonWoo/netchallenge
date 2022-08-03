@@ -1,6 +1,6 @@
 # Kiosk User Interface
 
-## prerequisite
+## Prerequisite
 > Docker  
   
 ### Install Docker
