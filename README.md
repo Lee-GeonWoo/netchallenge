@@ -1,36 +1,38 @@
 # Kiosk User Interface
 
-## Install Docker
+## prerequisite
+> Docker
+### Install Docker
 ```
 $ apt update
 $ apt install docker.io -y
 ```
 
-## Image Pulling
+### Image Pulling
 ```
 docker pull rjsdnfk9/ksk_tomcat:1.0
 docker pull rjsdnfk9/ksk_mysql:1.0
 ```
 
-## Running & Execute tomcat
+### Running & Execute tomcat
 ```
 $ docker run --name tomcat rjsdnfk9/ksk_tomcat:1.0
 ```
 
-## Running & Execute MySQL
+### Running & Execute MySQL
 ```
 $ docker run --name mysql rjsdnfk9/ksk_mysql:1.0
 $ docker exec -it mysql /bin/bash
 ```
 
-### In the MySQL Contatiner
+#### In the MySQL Contatiner
 ```
 $ mysql -u root -p
 $ {private_password} 
 $ use ksk;
 $ select * from clothes;
 ```
-### clothes table has 8 cols
+#### clothes table has 8 cols
 <b>category</b> : t-shirts, neat_sweater, pants, shirts, ...  
 <b>brand</b> : <clothes' brand>  
 <b>name</b> : <clothes' name>  
