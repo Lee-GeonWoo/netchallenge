@@ -11,3 +11,8 @@
 ## Map Page
 ![map](https://user-images.githubusercontent.com/70263403/182615353-df3b1d8d-e85b-4fc0-840d-5b507f670b81.png)
 <br/>
+<br/>
+
+## Blue color clothes Page
+![blue](https://user-images.githubusercontent.com/70263403/182615941-e232d255-e8dc-4260-9a4c-d25d9d67ce8c.png)
+<br/>
