@@ -15,19 +15,28 @@ docker pull rjsdnfk9/ksk_tomcat:1.0
 docker pull rjsdnfk9/ksk_mysql:1.0
 ```
 
-### Running & Execute tomcat
+### Running Tomcat
 ```
 $ docker run --name tomcat rjsdnfk9/ksk_tomcat:1.0
 ```
 
-### Running & Execute MySQL
+#### (Optional) In the Tomcat Contatiner
+Check JSP files
+```
+$ docker exec -it mysql /bin/bash
+$ cd webapps/ROOT/
+$ ls
+```
+
+### Running MySQL
 ```
 $ docker run --name mysql rjsdnfk9/ksk_mysql:1.0
-$ docker exec -it mysql /bin/bash
 ```
 
 #### (Optional) In the MySQL Contatiner
+Check table data
 ```
+$ docker exec -it mysql /bin/bash
 $ mysql -u root -p              # Login
 $ {private_password} 
 $ use ksk;                      # Use ksk(kiosk) databases
