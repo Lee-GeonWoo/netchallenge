@@ -49,8 +49,8 @@ https://templatemo.com/tm-539-simple-house
                         <div class="tm-paging-links">
                                 <nav>
                                         <ul>
-                                                <li class="tm-paging-item"><a href="tshirts.jsp">티셔츠 T-shirts</a></li>
-                                                <li class="tm-paging-item"><a href="jumper_hoodie.jsp" class="tm-paging-link">맨투맨 / 후드 Jumper / Hoodie </a></li>
+                                                <li class="tm-paging-item"><a href="tshirts.jsp" class="tm-paging-link>티셔츠 T-shirts</a></li>
+                                                <li class="tm-paging-item"><a href="jumper_hoodie.jsp" class="tm-paging-link active">맨투맨 / 후드 Jumper / Hoodie </a></li>
                                                 <li class="tm-paging-item"><a href="neat_sweater.jsp" class="tm-paging-link">니트 / 스웨터 Neat / Sweater </a></li>
                                                 <li class="tm-paging-item"><a href="shirts.jsp" class="tm-paging-link">셔츠  Shirts </a></li>
                                                 <li class="tm-paging-item"><a href="pants_skirt.jsp" class="tm-paging-link">바지 / 치마 Pants / Skirt </a></li>
