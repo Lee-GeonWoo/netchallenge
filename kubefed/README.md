@@ -11,7 +11,8 @@ $ kubectl config get-contexts
 $ vi /root/.kube/config
 ```
 
-### config example  
+### config example
+```
 host cluster = cluster1
 member cluster = cluster2
 ############################################################
