@@ -30,8 +30,8 @@ $ docker exec -it mysql /bin/bash
 ```
 $ mysql -u root -p
 $ {private_password} 
-$ use ksk;
-$ select * from clothes;
+$ use ksk; # ksk(kiosk) databases
+$ select * from clothes; # check clothes table
 ```
 #### ※ clothes table has 8 cols
 <b>category</b> : t-shirts, neat_sweater, pants, shirts, ...  
