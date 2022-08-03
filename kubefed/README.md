@@ -59,7 +59,7 @@ $ kubectl config get-contexts
 $ for i in {1..n}
 $ do
 $ kubefedctl join cluster1 --cluster-context cluster${i} --host-cluster-context cluster${i} --kubefed-namespace=kube-federation-system --v=2  
-(Member cluster joining to Host cluster)
+  (Member cluster joining to Host cluster)
 $ done
 
 $ kubectl -n kube-federation-system get kubefedclusters
