@@ -1,5 +1,5 @@
 # After Installation
- ex) cluster1(host), cluster2(member)
+ ex) cluster1(host), cluster2(member), cluster3(member)
 
 ## Change cluster's name to clusterN 
 ```
