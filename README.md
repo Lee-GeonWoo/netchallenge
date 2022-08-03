@@ -1,6 +1,7 @@
 # 쿠버네티스 기반 키오스크 통합 배포 및 관리 시스템  
 ![1](https://user-images.githubusercontent.com/70263403/182605928-10b981ca-8984-4cae-b8e0-5137329aa9c1.png)  
 <br/>
+<hr/>
 <br/>
 ![2](https://user-images.githubusercontent.com/70263403/182605930-31c2d42b-efe3-4d90-90a9-33eabd18324f.png)  
 <br/>
