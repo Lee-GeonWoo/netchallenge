@@ -22,6 +22,7 @@ $ docker run --name tomcat rjsdnfk9/ksk_tomcat:1.0
 $ docker run --name mysql rjsdnfk9/ksk_mysql:1.0
 $ docker exec -it mysql /bin/bash
 ```
+
 ### In the MySQL Contatiner
 ```
 $ mysql -u root -p
@@ -30,12 +31,12 @@ $ use ksk;
 $ select * from clothes;
 ```
 ### clothes table has 8 cols
-category : t-shirts, neat_sweater, pants, shirts, ...
-brand : <clothes' brand>
-name : <clothes' name>
-img : <clothes' image>
-price : <clothes' price>
-stock : <# of clothes>
-color : <clothes' color>
-readcount : <count of clothes' readcount>
+category : t-shirts, neat_sweater, pants, shirts, ...  
+brand : <clothes' brand>  
+name : <clothes' name>  
+img : <clothes' image>  
+price : <clothes' price>  
+stock : <# of clothes>  
+color : <clothes' color>  
+readcount : <count of clothes' readcount>  
 
