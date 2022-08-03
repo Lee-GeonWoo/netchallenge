@@ -8,15 +8,11 @@
 <br/>
 ![그림3](https://user-images.githubusercontent.com/70263403/182609696-87d130cb-fb21-4c58-a403-f24fafd6bc56.png)
 <br/>
-<br/>
 ![그림4](https://user-images.githubusercontent.com/70263403/182609872-77549f90-d43a-455a-8958-94131401a73b.png)
-<br/>
 <br/>
 ![그림5](https://user-images.githubusercontent.com/70263403/182609701-fe07d22e-57c9-4884-9c9e-7967c23c20ad.png)
 <br/>
-<br/>
 ![그림6](https://user-images.githubusercontent.com/70263403/182609709-fd9bcd6b-300b-4a3c-b8a5-cdc76fa7ddff.png)
-<br/>
 <br/>
 ![그림7](https://user-images.githubusercontent.com/70263403/182609714-f9c914ed-af72-479e-a03a-31f68653ddc1.png)
 <br/>
