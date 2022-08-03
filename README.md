@@ -26,7 +26,7 @@ $ docker run --name mysql rjsdnfk9/ksk_mysql:1.0
 $ docker exec -it mysql /bin/bash
 ```
 
-#### In the MySQL Contatiner
+#### (Optional) In the MySQL Contatiner
 ```
 $ mysql -u root -p              # Login
 $ {private_password} 
