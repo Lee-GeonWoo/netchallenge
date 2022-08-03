@@ -1,5 +1,5 @@
 # 쿠버네티스 기반 키오스크 통합 배포 및 관리 시스템  
-
+<br/>
 ![그림1](https://user-images.githubusercontent.com/70263403/182609689-9562bbab-4eda-41f8-a7a6-fccafddd8a95.png)
 <br/>
 <br/>
@@ -31,10 +31,10 @@
 ![그림12](https://user-images.githubusercontent.com/70263403/182609726-079e3dfe-0eef-489d-96b4-01e18708d505.png)
 <br/>
 <br/>
+<br/>
 ![그림13](https://user-images.githubusercontent.com/70263403/182609730-dffd858a-ad2a-4c9c-a1cf-c7f8741a944e.png)
 <br/>
 <br/>
 <br/>
 ![그림14](https://user-images.githubusercontent.com/70263403/182609734-9c40d778-96bb-408e-9864-5072288b8d71.png)
 <br/>
-
