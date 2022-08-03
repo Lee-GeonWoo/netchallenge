@@ -31,7 +31,7 @@ $ use ksk;
 $ select * from clothes;
 ```
 ### clothes table has 8 cols
-<b>category<b> : t-shirts, neat_sweater, pants, shirts, ...  
+<b>category</b> : t-shirts, neat_sweater, pants, shirts, ...  
 brand : <clothes' brand>  
 name : <clothes' name>  
 img : <clothes' image>  
