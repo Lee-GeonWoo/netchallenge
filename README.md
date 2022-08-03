@@ -9,12 +9,12 @@
 <br/>
 ![그림3](https://user-images.githubusercontent.com/70263403/182609696-87d130cb-fb21-4c58-a403-f24fafd6bc56.png)
 ![그림4](https://user-images.githubusercontent.com/70263403/182609872-77549f90-d43a-455a-8958-94131401a73b.png)
-![그림5](https://user-images.githubusercontent.com/70263403/182609701-fe07d22e-57c9-4884-9c9e-7967c23c20ad.png)
-![그림6](https://user-images.githubusercontent.com/70263403/182609709-fd9bcd6b-300b-4a3c-b8a5-cdc76fa7ddff.png)
+![그림5](https://user-images.githubusercontent.com/70263403/182613044-e1362907-3eb2-4e4d-a7e3-31cf18460f19.png)
+![그림6](https://user-images.githubusercontent.com/70263403/182613051-67ef36e7-366b-4f09-ab5c-f0e799b782ab.png)
 <br/>
 <br/>
 <br/>
-![그림7](https://user-images.githubusercontent.com/70263403/182612659-0419eaf7-16d2-478d-88b4-c1af3a2c3174.png)
+![그림7](https://user-images.githubusercontent.com/70263403/182613059-215d4ad7-9562-49ed-8bcf-ceee91bd56df.png)
 <br/>
 <br/>
 <br/>
