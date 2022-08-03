@@ -28,10 +28,10 @@ $ docker exec -it mysql /bin/bash
 
 #### In the MySQL Contatiner
 ```
-$ mysql -u root -p
+$ mysql -u root -p              # Login
 $ {private_password} 
-$ use ksk;                      # ksk(kiosk) databases
-$ select * from clothes;        # check clothes table
+$ use ksk;                      # Use ksk(kiosk) databases
+$ select * from clothes;        # Check clothes table
 ```
 #### ※ clothes table has 8 cols
 <b>category</b> : t-shirts, neat_sweater, pants, shirts, ...  
