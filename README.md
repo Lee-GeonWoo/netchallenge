@@ -32,7 +32,7 @@ $ {private_password}
 $ use ksk;
 $ select * from clothes;
 ```
-#### clothes table has 8 cols
+#### ※ clothes table has 8 cols
 <b>category</b> : t-shirts, neat_sweater, pants, shirts, ...  
 <b>brand</b> : <clothes' brand>  
 <b>name</b> : <clothes' name>  
