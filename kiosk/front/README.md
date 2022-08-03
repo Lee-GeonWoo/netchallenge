@@ -1,4 +1,4 @@
-## Main Page
+## Main Page (Default > T-shirts)
 ![main](https://user-images.githubusercontent.com/70263403/182615365-3cf8a11f-c7ee-45e0-8d04-9510014b696c.png)
 <br/>
 <br/>
