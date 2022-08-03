@@ -21,7 +21,8 @@
 <br/>
 ![그림8](https://user-images.githubusercontent.com/70263403/182609715-994850fe-1e75-4045-9f07-c2d69163187d.png)
 <br/>
-![그림9](https://user-images.githubusercontent.com/70263403/182609718-0582aa7b-27d5-44cf-a04d-e06a5317f3b8.png)
+  ![그림9](https://user-images.githubusercontent.com/70263403/182609718-0582aa7b-27d5-44cf-a04d-e06a5317f3b8.png)
+<br/>
 <br/>
 <br/>
 ![그림10](https://user-images.githubusercontent.com/70263403/182609720-3518bf39-8728-4446-94fe-68ae13071bf9.png)
@@ -33,6 +34,7 @@
 <br/>
 <br/>
 ![그림13](https://user-images.githubusercontent.com/70263403/182609730-dffd858a-ad2a-4c9c-a1cf-c7f8741a944e.png)
+<br/>
 <br/>
 <br/>
 ![그림14](https://user-images.githubusercontent.com/70263403/182609734-9c40d778-96bb-408e-9864-5072288b8d71.png)
