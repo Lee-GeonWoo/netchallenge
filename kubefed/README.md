@@ -1,10 +1,5 @@
-# After change your own config
+# After Installation
  ex) cluster1(host), cluster2(member)
-```
-$ systemctl daemon-reload
-$ systemctl restart kubelet
-$ kubectl config get-contexts
-```
 
 ## Change cluster's name to clusterN 
 ```
@@ -53,10 +48,17 @@ users:
     client-key-data: REDACTED
 ```
 
+## After Change Your own kube_config
+```
+$ systemctl daemon-reload
+$ systemctl restart kubelet
+$ kubectl config get-contexts
+```
 
 ```
 $ for i in {1..n} do
-$ kubefedctl join cluster1 --cluster-context cluster${i} --host-cluster-context cluster${i} --kubefed-namespace=kube-federation-system --v=2      # join host and member cluster to host cluster
+$ kubefedctl join cluster1 --cluster-context cluster${i} --host-cluster-context cluster${i} --kubefed-namespace=kube-federation-system --v=2  
+(Member cluster joining to Host cluster)
 $ done
 
 $ kubectl -n kube-federation-system get kubefedclusters
