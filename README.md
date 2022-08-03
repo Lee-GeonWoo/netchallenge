@@ -32,11 +32,11 @@ $ select * from clothes;
 ```
 ### clothes table has 8 cols
 <b>category</b> : t-shirts, neat_sweater, pants, shirts, ...  
-brand : <clothes' brand>  
-name : <clothes' name>  
-img : <clothes' image>  
-price : <clothes' price>  
-stock : <# of clothes>  
-color : <clothes' color>  
-readcount : <count of clothes' readcount>  
+<b>brand</b> : <clothes' brand>  
+<b>name</b> : <clothes' name>  
+<b>img</b> : <clothes' image>  
+<b>price</b> : <clothes' price>  
+<b>stock</b> : <# of clothes>  
+<b>color</b> : <clothes' color>  
+<b>readcount</b> : <count of clothes' readcount>  
 
