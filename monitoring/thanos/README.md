@@ -27,9 +27,8 @@ $ helm install thanos --values values.yaml --namespace monitoring bitnami/thanos
 
 ## Grafana Dashboard
 Check your 'thanos-query' Service IP -> This is your Data Sources URL (PORT: 9090)
-```
-img
-```
+![grafana](https://user-images.githubusercontent.com/70263403/182618940-5c0dcc30-4173-4f33-ad9e-5532abd008cb.png)
 
 Create-import-import via panel json (This file is 'grafana-dashboard-thanos.json', so copy and paste it)
-![thanos](https://user-images.githubusercontent.com/70263403/182599017-20a48208-5d3c-4f25-95c2-f3307200ab5f.png)
+![thanos](https://user-images.githubusercontent.com/70263403/182619185-64b15055-1bbd-46f7-8ca3-ad0d20a1f1fc.png)
+
