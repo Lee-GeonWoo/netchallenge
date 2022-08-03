@@ -31,5 +31,5 @@ Check your 'thanos-query' Service IP -> This is your Data Sources URL (PORT: 909
 img
 ```
 
-## Create-import-import via panel json (This file is 'grafana-dashboard-thanos.json', so copy and paste it)
+Create-import-import via panel json (This file is 'grafana-dashboard-thanos.json', so copy and paste it)
 ![thanos](https://user-images.githubusercontent.com/70263403/182599017-20a48208-5d3c-4f25-95c2-f3307200ab5f.png)
