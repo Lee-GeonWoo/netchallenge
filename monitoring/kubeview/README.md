@@ -1,3 +1,3 @@
 # Kubeview
 
-You can see kubernetes' resource with kubernetes' symbol
+You can see kubernetes' resource with symbol
