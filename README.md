@@ -14,7 +14,7 @@
 <br/>
 <br/>
 <br/>
-![그림7](https://user-images.githubusercontent.com/70263403/182609714-f9c914ed-af72-479e-a03a-31f68653ddc1.png)
+![그림7](https://user-images.githubusercontent.com/70263403/182612659-0419eaf7-16d2-478d-88b4-c1af3a2c3174.png)
 <br/>
 <br/>
 <br/>
