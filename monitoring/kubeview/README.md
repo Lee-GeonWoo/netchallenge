@@ -1,12 +1,15 @@
 # Kubeview
 
 ```
-chmod +x install_kubeview.sh
-source install_kubeview.sh
+$ chmod +x install_kubeview.sh
+$ source install_kubeview.sh
 ```
 or
 ```
+$ git clone https://github.com/benc-uk/kubeview.git
 
+$ cd charts
+$ helm install kubeview ./kubeview -f myvalues.yaml
 ```
 
 #### You can see kubernetes cluster's resource with symbol  
