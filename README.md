@@ -1,4 +1,4 @@
-## Kubernetes-based kiosk Federated deployment and management system
+## Kubernetes-based kiosk federated deployment and management system
 ### 쿠버네티스 기반 키오스크 통합 배포 및 관리 시스템  
 
 ![그림1](https://user-images.githubusercontent.com/70263403/182609689-9562bbab-4eda-41f8-a7a6-fccafddd8a95.png)
